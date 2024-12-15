@@ -6,7 +6,7 @@ EXPOSE 3000
 
 COPY . .
 
-RUN npm i
+RUN npm i --force
 RUN npm run build
 
 CMD [ "npm", "run", "start" ]
